@@ -3,33 +3,6 @@ const pool = require('../lib/utils/pool');
 const request = require('supertest');
 const app = require('../lib/app');
 const Recipe = require('../lib/models/recipe');
-const Log = require('../lib/models/log');
-
-describe('log routes', () => {
-  beforeEach(() => {
-    return pool.query(fs.readFileSync('./sql/setup.sql', 'utf-8'));
-  });
-
-  // it('creates a log', () => {
-
-  // });
-
-  // it('gets all log', () => {
-
-  // });
-
-  // it('gets a log by id', () => {
-
-  // });
-
-  // it('updates a log', () => {
-
-  // });
-
-  // it('deletes a log', () => {
-
-  // });
-});
 
 describe('recipe-lab routes', () => {
   beforeEach(() => {
